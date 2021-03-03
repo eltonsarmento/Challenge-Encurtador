@@ -1,4 +1,4 @@
-Challenge Encurtador
+#Challenge Encurtador
 
 Serviço a partir de parâmetro da URL que deverá ser encurtada
 conforme as seguintes regras:
@@ -35,21 +35,21 @@ Stack utilizadas:
 
 #Levantar ambiente Docker com Postgres e configurar
 
-# criar conteiner a partir de uma imagem (docker run)
-# nome do conteiner (--name)
-# fazer redirecionamento de porta (-p)
+//criar conteiner a partir de uma imagem (docker run)
+//nome do conteiner (--name)
+//fazer redirecionamento de porta (-p)
 sudo docker run --name database -e POSTGRES_PASSWORD=docker -p 5433:5432 -d postgres
 
-# conferir se o conteiner foi criado 
+//conferir se o conteiner foi criado 
 sudo docker ps
 
-# para startar o conteiner
+//para startar o conteiner
 sudo docker start dbpostgres
 
-#criar banco
+//criar banco
 teste_url
 
-# scrip para criat tabela
+//rip para criat tabela
 create table url
 (
     id         serial       not null constraint url_pk primary key,
